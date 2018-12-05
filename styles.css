@@ -1,0 +1,133 @@
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    height: 5rem;
+    max-width: 100%;
+    border-bottom: 0.1rem solid white;
+}
+
+nav .container {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav .mainMenu {
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav .row {
+    height: 100%;
+}
+
+.mainMenu > li {
+    display: inline-block;
+    height: 100%;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.mainMenu a {
+    color: white;
+    line-height: 5.5rem;
+}
+
+nav a:hover {
+    color: #e57200;
+}
+
+.navLogoContainer {
+    line-height: 5.5rem;
+    color: white;
+}
+
+.bannerLogo {
+    height: 2.1rem;
+    margin-right: 0.3rem;
+    vertical-align: sub;
+}
+
+header {
+    padding-top: 5rem;
+}
+
+header, nav {
+    background-color: #006747;
+}
+
+header .container {
+    padding: 10rem 1.5rem;
+}
+
+header .column {
+    color: white;
+    text-align:center;
+}
+
+header a.button {
+    margin-top: 4rem;
+}
+
+header h1 {
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.logo {
+    height: 10rem;
+}
+
+.menuItem {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 4px;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-47%);
+}
+
+.menuItem.open {
+    display: block;
+}
+
+.menuItem > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menuItem li {
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem a {
+    color: black;
+    display: block;
+    line-height: 1rem;
+    padding: 1.6rem 3rem 1.3rem;
+    text-align: center;
+}
+
+.colExample {
+    display: block;
+    background-color: #e0e0e0;
+    border-radius: 0.4rem;
+    height: 3.5rem;
+    line-height: 3.9rem;
+    margin: 1rem 0 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 5rem;
+}
