@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1986390-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-1986390-8');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Road | A CSS Boilerplate</title>
+    <title>Road | A Lightweight CSS Framework</title>
     <link rel="stylesheet" href="dist/normalize.css">
     <link rel="stylesheet" href="dist/road.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -29,8 +37,8 @@
                             <a href="#" class="menuLink" data-menu="docs">Documentation</a>
                             <div class="menuItem" id="docs">
                                 <ul>
-                                    <li><a href="#gettingstarted">Getting Started</a></li>
                                     <li><a href="#why">Why Road?</a></li>
+                                    <li><a href="#gettingstarted">Getting Started</a></li>
                                     <li><a href="#grids">Grids</a></li>
                                     <li><a href="#typography">Typography</a></li>
                                     <li><a href="#buttons">Buttons</a></li>
@@ -67,8 +75,8 @@
                         <line x1="80" y1="140" x2="120" y2="140" stroke="black" stroke-width="20" />
                     </svg>
                     <h1>Road</h1>
-                    <h4>A lightweight css boilerplate with inspiration from road signs</h4>
-                    <a href="https://github.com/kurt1288/Road/releases/download/1.0.0/road.zip" class="yellow button">Download</a>
+                    <h4>A lightweight css framework with inspiration from road signs</h4>
+                    <a href="https://github.com/kurt1288/Road/releases/latest" class="yellow button downloadLink">Download</a>
                 </div>
             </div>
         </div>
@@ -77,8 +85,9 @@
         <div class="row">
             <div class="column">
                 <h2>Why Road?</h2>
-                <p>Looking for a lightweight CSS starting point, but don't need all the options available in a larger framework? Road gives you a easy place to start while leaving only a small footprint in your project.</p>
-                <p>Want to contribute? Check out the Github!</p>
+                <p>Looking for a lightweight CSS starting point, but don't need all the options available in a larger framework? Road gives you a easy starting point and removes the need to create a responsive layout yourself. If all you need is some basic element styling and a responsive grid, then give Road a try!</p>
+                <p>Want to see an example of Road in action? This entire site is built with Road and only needed a few lines of custom CSS, mostly for the navigation bar.</p>
+                <p>Want to contribute? Check out the <a href="https://github.com/kurt1288/Road">Github</a>!</p>
             </div>
         </div>
     </div>
@@ -86,8 +95,8 @@
         <div class="row">
             <div class="column">
                 <h2>Getting Started</h2>
-                <p>Download Road below. Then just include both the Road and Normalize files in the header of your project.</p>
-                <a href="https://github.com/kurt1288/Road/releases/download/1.0.0/road.zip" class="button yellow">Download Road</a>
+                <p>First, download Road. Then just include both the Road and Normalize files in the header of your project.</p>
+                <a href="https://github.com/kurt1288/Road/releases/latest" class="button yellow downloadLink">Download Road</a>
                 <h5>What's included?</h5>
                 <p>The download includes both unminified and minified versions of Road and Normalize as a reset.</p>
                 <pre>
@@ -267,9 +276,11 @@ Road/
                     </div>
                     <div class="row">
                         <div class="column-2">
-                            <input type="checkbox" id="checkbox">
-                            <label for="checkbox">Check me</label>
                             <button type="submit" class="blue">Submit</button>
+                            <div>
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox">Check me</label>
+                            </div>
                         </div>
                         <div class="column-1 offset-1">
                             <label for="radio">Select One</label>
@@ -407,10 +418,12 @@ Road/
             <div class="column">
                 <table class="red">
                     <thead>
-                        <th>Type</th>
-                        <th>Color</th>
-                        <th>Shape</th>
-                        <th>Series</th>
+                        <tr>
+                            <th>Type</th>
+                            <th>Color</th>
+                            <th>Shape</th>
+                            <th>Series</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -441,10 +454,12 @@ Road/
                     <code>
 <table class="red">
     <thead>
-        <th>Type</th>
-        <th>Color</th>
-        <th>Shape</th>
-        <th>Series</th>
+        <tr>
+            <th>Type</th>
+            <th>Color</th>
+            <th>Shape</th>
+            <th>Series</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

@@ -14,6 +14,16 @@ String.prototype.escapeHtml = function() {
 };
 
 window.onload = function() {
+    // Get current file URL
+    fetch('https://api.github.com/repos/kurt1288/road/tags').then(function(response) { 
+        return response.json();
+    }).then(function(myJson) {
+        const url = "https://github.com/kurt1288/Road/releases/download/" + myJson[0].name + "/road.zip";
+        Array.from(document.getElementsByClassName('downloadLink')).forEach(function(e) {
+            e.href = url;
+        });
+    });
+
     const codeElements = document.body.getElementsByTagName('code');
     for (let i=0; i < codeElements.length; i++) {
         const escapedHtml = codeElements[i].innerHTML.escapeHtml();
