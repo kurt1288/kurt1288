@@ -12,146 +12,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Road | A Lightweight CSS Framework</title>
+    <title>Road | A Lightweight and Simple CSS Framework</title>
     <link rel="stylesheet" href="dist/normalize.css">
     <link rel="stylesheet" href="dist/road.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <a href="/" class="navLogoContainer">
-                        <svg viewBox="0 0 200 200" class="bannerLogo">
-                            <rect x="000" y="0" width="70%" height="70%" fill="rgb(255,205,0)" stroke="black" stroke-width="4" transform="translate(100,0) rotate(45)" />
-                            <line x1="80" y1="60" x2="120" y2="60" stroke="black" stroke-width="20" />
-                            <line x1="50" y1="100" x2="150" y2="100" stroke="black" stroke-width="20" />
-                            <line x1="80" y1="140" x2="120" y2="140" stroke="black" stroke-width="20" />
-                        </svg>
-                        Road
-                    </a>
-                    <ul class="mainMenu">
-                        <li>
-                            <a href="#" class="menuLink" data-menu="docs">Documentation</a>
-                            <div class="menuItem" id="docs">
-                                <ul>
-                                    <li><a href="#why">Why Road?</a></li>
-                                    <li><a href="#gettingstarted">Getting Started</a></li>
-                                    <li><a href="#grids">Grids</a></li>
-                                    <li><a href="#typography">Typography</a></li>
-                                    <li><a href="#buttons">Buttons</a></li>
-                                    <li><a href="#forms">Forms</a></li>
-                                    <li><a href="#lists">Lists</a></li>
-                                    <li><a href="#tables">Tables</a></li>
-                                    <li><a href="#colors">Colors</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" class="menuLink" data-menu="help">Help</a>
-                            <div class="menuItem" id="help">
-                                <ul>
-                                    <li><a href="https://github.com/kurt1288/Road">Github</a></li>
-                                    <li><a href="https://github.com/kurt1288/Road/blob/master/LICENSE">License</a></li>
-                                    <li><a href="https://github.com/kurt1288/Road/releases">Versions</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>        
-    </nav>
-    <header>
-        <div class="container" id="why">
-            <div class="row">
-                <div class="column">
-                    <svg viewBox="0 0 200 200" class="logo">
-                        <rect x="000" y="0" width="70%" height="70%" fill="rgb(255,205,0)" stroke="black" stroke-width="4" transform="translate(100,0) rotate(45)" />
-                        <line x1="80" y1="60" x2="120" y2="60" stroke="black" stroke-width="20" />
-                        <line x1="50" y1="100" x2="150" y2="100" stroke="black" stroke-width="20" />
-                        <line x1="80" y1="140" x2="120" y2="140" stroke="black" stroke-width="20" />
-                    </svg>
-                    <h1>Road</h1>
-                    <h4>A lightweight css framework with inspiration from road signs</h4>
-                    <a href="https://github.com/kurt1288/Road/releases/latest" class="yellow button downloadLink">Download</a>
-                </div>
+    <div class="row">
+        <div id="sidebar" class="green">
+            <div class="container">
+                <h4 class="t-center">Road</h4>
+                <h5>Components</h5>
+                <ul>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#utilities">Utilities</a></li>
+                </ul>
+                <h5>Help</h5>
+                <ul>
+                    <li><a href="https://github.com/kurt1288/Road">Github</a></li>
+                    <li><a href="https://github.com/kurt1288/Road/blob/master/LICENSE">License</a></li>
+                    <li><a href="https://github.com/kurt1288/Road/releases">Versions</a></li>
+                </ul>
             </div>
         </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <h2>Why Road?</h2>
-                <p>Looking for a lightweight CSS starting point, but don't need all the options available in a larger framework? Road gives you a easy starting point and removes the need to create a responsive layout yourself. If all you need is some basic element styling and a responsive grid, then give Road a try!</p>
-                <p>Want to see an example of Road in action? This entire site is built with Road and only needed a few lines of custom CSS, mostly for the navigation bar.</p>
-                <p>Want to contribute? Check out the <a href="https://github.com/kurt1288/Road">Github</a>!</p>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="gettingstarted">
-        <div class="row">
-            <div class="column">
-                <h2>Getting Started</h2>
-                <p>First, download Road. Then just include both the Road and Normalize files in the header of your project.</p>
-                <a href="https://github.com/kurt1288/Road/releases/latest" class="button yellow downloadLink">Download Road</a>
-                <h5>What's included?</h5>
-                <p>The download includes both unminified and minified versions of Road and Normalize as a reset.</p>
-                <pre>
-                    <code>
+        <div class="column" id="content">
+            <div class="container wide">
+                <header>
+                    <div class="row">
+                        <div class="column">
+                            <div class="row">
+                                <div class="column-4" id="sign">
+                                    <h1 class="t-bold">Road</h1>
+                                    <h4>A simple, small CSS framework</h4>
+                                </div>
+                            </div>
+                            <a href="https://github.com/kurt1288/Road/raw/master/RoadCSS.zip" class="orange button downloadLink">Download</a>
+                        </div>
+                    </div>
+                </header>
+                <div id="why">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Why Road?</h2>
+                            <p>Road is a simple, lightweight (only 2KB gzipped), and responsive CSS framework. It allows you to start working on the important details instead of spending time on the initial general setup.</p>
+                            <p>This entire site is built with Road and only needed a few lines of custom CSS.</p>
+                            <p>Want to contribute? Check out the <a href="https://github.com/kurt1288/Road">Github repo</a>!</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="gettingstarted">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Getting Started</h2>
+                            <p>First, <a href="https://github.com/kurt1288/Road/raw/master/RoadCSS.zip">download</a> Road. Then just include both the Road and Normalize files in the header of your project.</p>
+                            <h5>What's included?</h5>
+                            <p>The download includes both unminified and minified versions of Road and Normalize as a reset.</p>
+                            <pre>
+                                <code>
 Road/
 ├── road.css
 ├── road.min.css
 └── normalize.css
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="grids">
-        <div class="row">
-            <div class="column">
-                <h2>Grids</h2>
-                <p>Road's grid layout is based off the CSS flexbox, with a maximum width of <code>100rem</code> (1000px). Each column will grow and shrink automatically as the device window changes. Unlike other CSS libraries that use arbitrary column widths, Road simply uses round percentages, like 10%, 40%, etc.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column-1"><span class="colExample">10%</span></div>
-            <div class="column-9"><span class="colExample">90%</span></div>
-        </div>
-        <div class="row">
-            <div class="column-2"><span class="colExample">20%</span></div>
-            <div class="column-8"><span class="colExample">80%</span></div>
-        </div>
-        <div class="row">
-            <div class="column-25"><span class="colExample">25%</span></div>
-            <div class="column-75"><span class="colExample">75%</span></div>
-        </div>
-        <div class="row">
-            <div class="column-3"><span class="colExample">30%</span></div>
-            <div class="column-7"><span class="colExample">70%</span></div>
-        </div>
-        <div class="row">
-            <div class="column-33"><span class="colExample">33%</span></div>
-            <div class="column-67"><span class="colExample">67%</span></div>
-        </div>
-        <div class="row">
-            <div class="column-4"><span class="colExample">40%</span></div>
-            <div class="column-6"><span class="colExample">60%</span></div>
-        </div>
-        <div class="row">
-            <div class="column-5"><span class="colExample">50%</span></div>
-            <div class="column-5"><span class="colExample">50%</span></div>
-        </div>
-        <div class="row">
-            <div class="column"><span class="colExample">Full column width</span></div>
-        </div>
-        <div class="row">
-            <div class="column">
-            <pre>
-                <code>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="layout">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Layout</h2>
+                            <p>Road's two layout options are a wrapping container and a flexible grid system.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Container</h4>
+                            <p>Adding a container wrapper can be done simply by adding a <code>.container</code> class to any element.</p>
+                            <p>Three sizes of containers are available:</p>
+                            <ul>
+                                <li><code>.container</code> max width of 100rem</li>
+                                <li><code>.container.wide</code> max width of 140rem</li>
+                                <li><code>.container.narrow</code> max width of 60rem</li>
+                            </ul>
+                            <pre>
+                                <code>
+<div class="container">
+    <!-- Default container -->
+</div>
+<div class="container wide">
+    <!-- A wide container -->
+</div>
+<div class="container narrow">
+    <!-- A narrow container -->
+</div>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Grid</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="grids">
+                    <div class="row">
+                        <div class="column">
+                            <p>Road's grid layout is based off the CSS flexbox. Each column will grow and shrink automatically as the device window changes. Unlike other CSS libraries that use arbitrary column widths, Road simply uses round percentages, like 10%, 40%, etc.</p>                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column-1"><span class="colExample">10%</span></div>
+                        <div class="column-9"><span class="colExample">90%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-2"><span class="colExample">20%</span></div>
+                        <div class="column-8"><span class="colExample">80%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-25"><span class="colExample">25%</span></div>
+                        <div class="column-75"><span class="colExample">75%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-3"><span class="colExample">30%</span></div>
+                        <div class="column-7"><span class="colExample">70%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-33"><span class="colExample">33%</span></div>
+                        <div class="column-67"><span class="colExample">67%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-4"><span class="colExample">40%</span></div>
+                        <div class="column-6"><span class="colExample">60%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column-5"><span class="colExample">50%</span></div>
+                        <div class="column-5"><span class="colExample">50%</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><span class="colExample">Full column width</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                        <pre>
+                            <code>
 <!-- This is the main content wrapper -->
 <div class="container">
 
@@ -173,134 +184,125 @@ Road/
         <div class="column-3 offset-1">Gives a column 30% wide offset to the right by 10%</div>
     </div>
 </div>
-                </code>
-            </pre>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="typography">
-        <div class="row">
-            <div class="column">
-                <h2>Typography</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column-7">
-                <p>Road uses <code>rem</code> for all font sizing. The base font size is 10px, so relative sizing can be done easily.</p>
-                <p>The <code>font-family</code> is <a href="http://overpassfont.org/">Overpass</a>, a font inspired by <a href="https://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic</a> (the font used on actual highway signs), and created by <a href="https://www.delvefonts.com/">Delve Fonts</a>. The font file is served by Google Fonts.</p>
-                <p>Road uses three font weights: 200 for light, 300 for medium, and 400 for bold.</p>
-                <p>In <code>code</code> elements, the <code>font-family</code> is Overpass Mono.</p>
-            </div>
-            <div class="column-3">
-                <h1>Heading h1</h1>
-                <h2>Heading h2</h2>
-                <h3>Heading h3</h3>
-                <h4>Heading h4</h4>
-                <h5>Heading h5</h5>
-                <h6>Heading h6</h6>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="buttons">
-        <div class="row">
-            <div class="column">
-                <h2>Buttons</h2>
-                <p>
-                    Road offers buttons in many different styles, all emulating the colors of common traffic signs. Both <code>button</code> and <code>input</code> elements can be used and will be styled appropriately. Alternatively, anchor elements can be styled by adding the <code>.button</code> class.
-                </p>
-                <p>Buttons may also be styled with the <a href="#colors">various colors</a> by adding the corresponding class to the element.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <button>Default button</button>
-                <input type="button" value="Disabled input" disabled />
-                <a href="#" class="button black">Black button</a>
-                <button class="green">Green button</button>
-                <button class="red">Red button</button>
-                <button class="blue">Blue button</button>
-                <button class="orange">Orange button</button>
-                <button class="brown">Brown button</button>
-                <button class="purple">Purple button</button>
-                <button class="yellow">Yellow button</button>
-                <button class="yellowgreen">Yellow-green button</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <pre>
-                    <code>
-<button>Default button</button>
-<input type="submit" value="Submit" />
-<a href="#" class="button blue">Anchor (blue button)</a>
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="forms">
-        <div class="row">
-            <div class="column">
-                <h2>Forms</h2>
-                <p>Road hopefully makes your form-building experience a little easier. Styles are applied to all form elements, and when combined with the grid, laying out your form can be a breeze.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <form>
-                    <div class="row">
-                        <div class="column-3">
-                            <label for="textInput">First Name</label>
-                            <input type="text" id="textInput">
+                            </code>
+                        </pre>
                         </div>
-                        <div class="column-3">
-                                <label for="textInput">Last Name</label>
-                                <input type="text" id="textInput">
-                            </div>
-                        <div class="column-3 offset-1">
-                            <label for="year">Year</label>
-                            <select name="year" id="year">
-                                <option value="2000">2000</option>
-                                <option value="2005">2005</option>
-                                <option value="2010">2010</option>
-                                <option value="2015">2015</option>
-                                <option value="2020">2020</option>
-                            </select>
+                    </div>
+                </div>
+                <div id="typography">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Typography</h2>
+                            <p>All typography is based off a starting font size of 10px. Headings are subsequently adjusted from this font size. Road uses three font weights: 200 for light, 300 for medium, and 400 for bold. In <code>code</code> elements, the <code>font-family</code> is Overpass Mono. The font families used are <a href="http://overpassfont.org/">Overpass</a> and Overpass Mono (for code elements). Both are created by <a href="https://www.delvefonts.com/">Delve Fonts</a>.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="column">
-                            <label for="comments">Comments</label>
-                            <textarea name="comments" id="comments"></textarea>
+                            <h1>Heading h1</h1>
+                            <h2>Heading h2</h2>
+                            <h3>Heading h3</h3>
+                            <h4>Heading h4</h4>
+                            <h5>Heading h5</h5>
+                            <h6>Heading h6</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Buttons</h2>
+                            <p>
+                                Both <code>button</code> and <code>input</code> elements can be used and will be styled appropriately. Anchor elements can also be styled by adding the <code>.button</code> class.
+                            </p>
+                            <p>Buttons may also be styled with the <a href="#colors">various colors</a> by adding the corresponding class to the element.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column-2">
-                            <button type="submit" class="blue">Submit</button>
-                            <div>
-                                <input type="checkbox" id="checkbox">
-                                <label for="checkbox">Check me</label>
-                            </div>
-                        </div>
-                        <div class="column-1 offset-1">
-                            <label for="radio">Select One</label>
-                            <div>
-                                <div>
-                                    <input type="radio" name="radio" value="one" id="radioOne"><label for="radioOne">One</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="radio" value="two" id="radioTwo"><label for="radioTwo">Two</label>
-                                </div>
-                            </div>
+                        <div class="column">
+                            <button>Default</button>
+                            <input type="button" value="Disabled" disabled />
+                            <a href="#" class="button black">Black</a>
+                            <button class="green">Green</button>
+                            <button class="red">Red</button>
+                            <button class="blue">Blue</button>
+                            <button class="orange">Orange</button>
+                            <button class="brown">Brown</button>
+                            <button class="purple">Purple</button>
+                            <button class="yellow">Yellow</button>
+                            <button class="yellowgreen">Yellow-green</button>
                         </div>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <pre>
-                    <code>
+                    <div class="row">
+                        <div class="column">
+                            <pre>
+                                <code>
+<button class="green">Default button</button>
+<input type="submit" value="Submit" />
+<a href="#" class="button blue">Anchor (blue button)</a>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="forms">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Forms</h2>
+                            <p>Road hopefully makes your form-building experience a little easier. Styles are applied to all form elements, and when combined with the grid, laying out your form can be a breeze.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <form>
+                                <div class="row">
+                                    <div class="column-3">
+                                        <label for="textInput">First Name</label>
+                                        <input type="text" id="textInput">
+                                    </div>
+                                    <div class="column-3">
+                                            <label for="textInput">Last Name</label>
+                                            <input type="text" id="textInput">
+                                        </div>
+                                    <div class="column-3 offset-1">
+                                        <label for="year">Year</label>
+                                        <select name="year" id="year">
+                                            <option value="2000">2000</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2020">2020</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        <label for="comments">Comments</label>
+                                        <textarea name="comments" id="comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column-2">
+                                        <button type="submit" class="blue">Submit</button>
+                                        <label><input type="checkbox" id="checkbox">Check me</label>
+                                    </div>
+                                    <div class="column-1 offset-1">
+                                        <label for="radio">Select One</label>
+                                        <label><input type="radio" name="radio" value="one" id="radioOne">One</label>
+                                        <label><input type="radio" name="radio" value="two" id="radioTwo">Two</label>
+                                    </div>
+                                    <div class="column-2 offset-1">
+                                        <label for="radio">Select One</label>
+                                        <label class="inline"><input type="radio" name="radio" value="one" id="radioOne">One</label>
+                                        <label class="inline"><input type="radio" name="radio" value="two" id="radioTwo">Two</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <pre>
+                                <code>
 <!-- The form above is laid out below -->
 <form>
     <div class="row">
@@ -348,110 +350,56 @@ Road/
         </div>
     </div>
 </form>
-                    </code>
-                </pre>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="lists">
-        <div class="row">
-            <div class="column">
-                <h2>Lists</h2>
-                <p>Road has styles for 3 types of lists: The unordered list <code>ul</code>, the ordered list <code>ol</code>, and the description list <code>dl</code>.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column-3">
-                <h4>Unordered List</h4>
-                <ul>
-                    <li>Item 1</li>
-                    <li>
-                        Item 2
-                        <ul>
-                            <li>Sub-item 1</li>
-                            <li>Sub-item 2</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="column-3">
-                <h4>Ordered List</h4>
-                <ol>
-                    <li>
-                        Ordered item 1
-                        <ol>
-                            <li>Ordered sub-item 1</li>
-                        </ol>
-                    </li>
-                    <li>
-                        Ordered item 2
-                        <ul>
-                            <li>Sub-item 1</li>
-                            <li>Sub-item 2</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-            <div class="column-3">
-                <h4>Description List</h4>
-                <dl>
-                    <dt>Descriptive List</dt>
-                    <dt>Descriptive List</dt>
-                    <dd>
-                        This is a descriptive list
-                    </dd>
-                    <dd>
-                        Description lists aren't used very often
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <div class="container" id="tables">
-        <div class="row">
-            <div class="column">
-                <h2>Tables</h2>
-                <p>When building a table, make sure to use the <code>thead</code> and <code>tbody</code> markup appropriately. Tables can also be styled with the <a href="#colors">various colors</a> by adding the desired class name to the <code>table</code> element.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <table class="red">
-                    <thead>
-                        <tr>
-                            <th>Type</th>
-                            <th>Color</th>
-                            <th>Shape</th>
-                            <th>Series</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Stop</td>
-                            <td>Red</td>
-                            <td>Octagon</td>
-                            <td>R1</td>
-                        </tr>
-                        <tr>
-                            <td>No Parking</td>
-                            <td>White/red</td>
-                            <td>Rectangle</td>
-                            <td>R7</td>
-                        </tr>
-                        <tr>
-                            <td>Warning</td>
-                            <td>Yellow</td>
-                            <td>Diamond</td>
-                            <td>W1</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-                <pre>
-                    <code>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="tables">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Tables</h2>
+                            <p>When building a table, make sure to use the <code>thead</code> and <code>tbody</code> markup appropriately. Tables can also be styled with the <a href="#colors">various colors</a> by adding the desired class name to the <code>table</code> element.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <table class="red">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Color</th>
+                                        <th>Shape</th>
+                                        <th>Series</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Stop</td>
+                                        <td>Red</td>
+                                        <td>Octagon</td>
+                                        <td>R1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>No Parking</td>
+                                        <td>White/red</td>
+                                        <td>Rectangle</td>
+                                        <td>R7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Warning</td>
+                                        <td>Yellow</td>
+                                        <td>Diamond</td>
+                                        <td>W1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <pre>
+                                <code>
 <table class="red">
     <thead>
         <tr>
@@ -482,29 +430,78 @@ Road/
         </tr>
     </tbody>
 </table>
-                    </code>
-                </pre>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="colors">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Colors</h2>
+                            <p>Included in Road are various colors that can be applied to <code>table</code>, <code>button</code>, <code>input</code> elements, and anchor elements with the class <code>.button</code>. The color classes are as follows:</p>
+                            <ul>
+                                <li><code>.black</code></li>
+                                <li><code>.blue</code></li>
+                                <li><code>.brown</code></li>
+                                <li><code>.green</code></li>
+                                <li><code>.orange</code></li>
+                                <li><code>.purple</code></li>
+                                <li><code>.red</code></li>
+                                <li><code>.yellow</code></li>
+                                <li><code>.yellowgreen</code></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="utilities">
+                    <div class="row">
+                        <div class="column">
+                            <h2>Utilities</h2>
+                            <p>The following utility classes are provided for convience:</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.clearfix</code></td>
+                                        <td>Clear floated content</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.f-left</code></td>
+                                        <td>Float content left</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.f-right</code></td>
+                                        <td>Float content right</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.f-none</code></td>
+                                        <td>Set content float to none</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.t-light</code></td>
+                                        <td>Light (200) font weight</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.t-normal</code></td>
+                                        <td>Normal (400) font weight</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.t-bold</code></td>
+                                        <td>Bold (600) font weight</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container" id="colors">
-        <div class="row">
-            <div class="column">
-                <h2>Colors</h2>
-                <p>Included in Road are various colors that can be applied to <code>table</code>, <code>button</code>, <code>input</code> elements, and anchor elements with the class <code>.button</code>. The color classes are as follows:</p>
-                <ul>
-                    <li><code>.black</code></li>
-                    <li><code>.blue</code></li>
-                    <li><code>.brown</code></li>
-                    <li><code>.green</code></li>
-                    <li><code>.orange</code></li>
-                    <li><code>.purple</code></li>
-                    <li><code>.red</code></li>
-                    <li><code>.yellow</code></li>
-                    <li><code>.yellowgreen</code></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </div>    
 </body>
 </html>
